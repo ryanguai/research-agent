@@ -29,8 +29,13 @@ def ensure_index():
 
 ensure_index()
 
-from dotenv import load_dotenv
-load_dotenv()
+import os
+try:
+    gemini_key = st.secrets["GEMINI_API_KEY"]
+    os.environ["GEMINI_API_KEY"] = gemini_key
+except Exception:
+    from dotenv import load_dotenv
+    load_dotenv()
 
 from src.pipeline import Pipeline
 
