@@ -49,6 +49,7 @@ def load_pipeline(mode: str, provider: str) -> Pipeline:
         index_dir=str(INDEX_DIR),
         retrieval_mode=mode,
         provider=provider,
+        generation_model="gemini-3-flash-preview",
     )
 
 
@@ -97,7 +98,11 @@ query = st.text_input(
 
 if query:
     with st.spinner("Retrieving and generating..."):
-        answer, chunks, result = pipeline.query(query)
+        try:
+            answer, chunks, result = pipeline.query(query)
+        except Exception as e:
+            st.error("The LLM provider is temporarily rate-limited. Please wait a moment and try again.")
+            st.stop()
 
     st.markdown("### Answer")
     st.markdown(answer)

@@ -67,7 +67,7 @@ PROVIDER_DEFAULTS = {
 }
 
 
-@retry(stop=stop_after_attempt(3), wait=wait_exponential(min=10, max=60))
+@retry(stop=stop_after_attempt(2), wait=wait_exponential(min=15, max=60))
 def generate_answer(
     query: str,
     chunks: list[RetrievedChunk],
