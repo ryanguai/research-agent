@@ -10,3 +10,4 @@ data/parsed/
 data/index/
 .ruff_cache/
 .pytest_cache/
+.claude/

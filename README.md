@@ -42,24 +42,29 @@ Keeping up with AI/ML research is hard — hundreds of papers are published week
 
 ## Eval Results
 
-<!-- Updated after running scripts/run_eval.py -->
+84 questions (54 factual, 20 synthesis, 10 adversarial), each run against both retrieval strategies with Gemini 3.1 Flash Lite as generator and LLM-as-judge.
 
 | Metric | Vector-Only | Hybrid | Delta |
 |--------|------------|--------|-------|
-| Judge Score (1-5) | — | — | — |
-| Retrieval Precision | — | — | — |
-| Retrieval Recall | — | — | — |
-| Adversarial Decline Rate | — | — | — |
-| Avg Latency (ms) | — | — | — |
-| Total Cost ($) | — | — | — |
+| Overall Judge Score (1-5) | 2.88 | 2.81 | -0.07 |
+| Factual Retrieval Recall | 57.4% | 68.5% | **+11.1%** |
+| Factual Judge Score | 2.46 | 2.52 | +0.06 |
+| Synthesis Judge Score | 2.95 | 3.35 | **+0.40** |
+| Adversarial Decline Rate | 100% | 60% | -40% |
+| Avg Latency (ms) | 4,630 | 5,816 | +1,186 |
+| Total Cost ($) | 0.00 | 0.00 | 0.00 |
 
 ## Retrieval Comparison
 
-The eval suite was run against both retrieval strategies to quantify the impact of adding BM25 keyword search to the vector baseline. Key finding:
+The eval suite was run against both retrieval strategies to quantify the impact of adding BM25 keyword search to the vector baseline.
 
-<!-- Fill in after eval -->
+**Key findings:**
 
-> _Results pending eval run._
+- **Hybrid retrieval improves recall by 11%** — BM25 catches papers with exact technical terms that vector search misses, bringing retrieval recall from 57.4% to 68.5%.
+- **Synthesis questions benefit most from hybrid** — judge score improved from 2.95 to 3.35 (+0.40). Combining info across papers requires diverse retrieval, which hybrid delivers.
+- **Vector-only is better at declining adversarial questions** — 100% decline rate vs 60%. Hybrid's broader retrieval pulls in loosely related chunks, making the generator less confident about saying "I don't know."
+- **Hybrid adds ~1.2s latency** — the BM25 search over 28K chunks is the cost. Acceptable for a research Q&A tool, but worth noting.
+- **Overall judge scores are close** — the Gemini 3.1 Flash Lite judge isn't highly discriminating. The retrieval metrics tell the clearer story.
 
 ## Project Structure
 

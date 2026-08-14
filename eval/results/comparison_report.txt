@@ -4,17 +4,17 @@ RETRIEVAL COMPARISON: Vector-Only vs Hybrid (BM25 + Vector)
 ================================================================================
 Metric                                         Vector       Hybrid        Delta
 --------------------------------------------------------------------------------
-Overall Judge Score (1-5)                       1.857        0.000      -1.857
-Overall Avg Latency (ms)                         7384            0       -7384
-Total Cost ($)                                 0.0030       0.0000     -0.0030
-Factual — Retrieval Precision                   0.238        0.000      -0.238
-Factual — Retrieval Recall                      0.429        0.000      -0.429
-Factual — Judge Score                           1.857        0.000      -1.857
-Synthesis — Retrieval Precision                 0.000        0.000       0.000
-Synthesis — Retrieval Recall                    0.000        0.000       0.000
-Synthesis — Judge Score                         0.000        0.000       0.000
+Overall Judge Score (1-5)                       2.881        2.810      -0.071
+Overall Avg Latency (ms)                         4630         5816 +       1186
+Total Cost ($)                                 0.0000       0.0000      0.0000
+Factual — Retrieval Precision                   0.277        0.261      -0.016
+Factual — Retrieval Recall                      0.574        0.685 +      0.111
+Factual — Judge Score                           2.463        2.519 +      0.056
+Synthesis — Retrieval Precision                 0.460        0.392      -0.068
+Synthesis — Retrieval Recall                    0.550        0.575 +      0.025
+Synthesis — Judge Score                         2.950        3.350 +      0.400
 Adversarial — Retrieval Precision               0.000        0.000       0.000
-Adversarial — Retrieval Recall                  0.000        0.000       0.000
-Adversarial — Judge Score                       0.000        0.000       0.000
-Adversarial — Decline Rate                      0.000        0.000       0.000
+Adversarial — Retrieval Recall                  1.000        1.000       0.000
+Adversarial — Judge Score                       5.000        3.300      -1.700
+Adversarial — Decline Rate                      1.000        0.600      -0.400
 ================================================================================

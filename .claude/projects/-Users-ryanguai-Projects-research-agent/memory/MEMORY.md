@@ -1,1 +1,0 @@
-- [Gemini free tier limits](feedback_gemini-rate-limits.md) — always account for Gemini free tier rate limits, add delays to avoid getting blocked
