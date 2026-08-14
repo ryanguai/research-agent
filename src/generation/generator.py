@@ -131,8 +131,8 @@ Paper excerpts:
 
 
 GEMINI_FALLBACK_MODELS = [
-    "gemini-3-flash-preview",
     "gemini-3.1-flash-lite",
+    "gemini-3-flash-preview",
     "gemma-4-26b-a4b-it",
     "gemini-3.1-pro-preview",
 ]

@@ -57,7 +57,7 @@ def load_pipeline(mode: str, provider: str) -> Pipeline:
         index_dir=str(INDEX_DIR),
         retrieval_mode=mode,
         provider=provider,
-        generation_model="gemini-3-flash-preview",
+        generation_model="gemini-3.1-flash-lite",
     )
 
 
