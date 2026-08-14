@@ -123,31 +123,52 @@ Paper excerpts:
     return result
 
 
+GEMINI_FALLBACK_MODELS = [
+    "gemini-3-flash-preview",
+    "gemini-3.1-flash-lite",
+    "gemma-4-26b-a4b-it",
+    "gemini-3.1-pro-preview",
+]
+
+
 def _generate_gemini(
     model: str, user_message: str, temperature: float, max_tokens: int
 ) -> tuple[str, int, int]:
-    """Generate using Google's native GenAI SDK."""
+    """Generate using Google's native GenAI SDK with model fallback."""
     from google import genai
     from google.genai import types
 
     client = genai.Client(api_key=_get_env("GEMINI_API_KEY"))
-    response = client.models.generate_content(
-        model=model,
-        contents=[
-            types.Content(
-                role="user",
-                parts=[types.Part(text=f"{SYSTEM_PROMPT}\n\n{user_message}")],
-            )
-        ],
-        config=types.GenerateContentConfig(
-            temperature=temperature,
-            max_output_tokens=max_tokens,
-        ),
-    )
 
-    input_tokens = response.usage_metadata.prompt_token_count or 0
-    output_tokens = response.usage_metadata.candidates_token_count or 0
-    return response.text, input_tokens, output_tokens
+    models_to_try = [model] + [m for m in GEMINI_FALLBACK_MODELS if m != model]
+    last_error = None
+
+    for m in models_to_try:
+        try:
+            response = client.models.generate_content(
+                model=m,
+                contents=[
+                    types.Content(
+                        role="user",
+                        parts=[types.Part(text=f"{SYSTEM_PROMPT}\n\n{user_message}")],
+                    )
+                ],
+                config=types.GenerateContentConfig(
+                    temperature=temperature,
+                    max_output_tokens=max_tokens,
+                ),
+            )
+            input_tokens = response.usage_metadata.prompt_token_count or 0
+            output_tokens = response.usage_metadata.candidates_token_count or 0
+            if m != model:
+                log.info("gemini_fallback", original=model, used=m)
+            return response.text, input_tokens, output_tokens
+        except Exception as e:
+            last_error = e
+            log.warning("gemini_model_failed", model=m, error=str(e)[:80])
+            continue
+
+    raise last_error
 
 
 def _generate_openai_compat(
