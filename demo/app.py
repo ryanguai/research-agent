@@ -29,13 +29,16 @@ def ensure_index():
 
 ensure_index()
 
-import os
 try:
     gemini_key = st.secrets["GEMINI_API_KEY"]
     os.environ["GEMINI_API_KEY"] = gemini_key
-except Exception:
+    print(f"[app] Loaded GEMINI_API_KEY from st.secrets (length={len(gemini_key)})")
+except Exception as e:
+    print(f"[app] st.secrets failed: {e}, falling back to .env")
     from dotenv import load_dotenv
     load_dotenv()
+
+print(f"[app] GEMINI_API_KEY in env: {bool(os.environ.get('GEMINI_API_KEY'))}")
 
 from src.pipeline import Pipeline
 
