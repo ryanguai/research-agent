@@ -1,11 +1,37 @@
 """Streamlit demo for the Research Paper Q&A Agent."""
 
+import os
+import subprocess
 import sys
+import tarfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import streamlit as st
+
+INDEX_DIR = Path("data/index")
+INDEX_URL = "https://github.com/ryanguai/research-agent/releases/download/v0.1.0/research-agent-index.tar.gz"
+
+
+@st.cache_resource
+def ensure_index():
+    """Download and extract the pre-built index if not present."""
+    if INDEX_DIR.exists() and any(INDEX_DIR.iterdir()):
+        return
+    st.info("Downloading pre-built index (~193MB)... This only happens once.")
+    INDEX_DIR.parent.mkdir(parents=True, exist_ok=True)
+    tar_path = Path("data/index.tar.gz")
+    subprocess.run(["curl", "-L", "-o", str(tar_path), INDEX_URL], check=True)
+    with tarfile.open(tar_path) as tar:
+        tar.extractall("data")
+    tar_path.unlink()
+
+
+ensure_index()
+
+from dotenv import load_dotenv
+load_dotenv()
 
 from src.pipeline import Pipeline
 
@@ -21,7 +47,7 @@ st.markdown(
 @st.cache_resource
 def load_pipeline(mode: str, provider: str) -> Pipeline:
     return Pipeline(
-        index_dir="data/index",
+        index_dir=str(INDEX_DIR),
         retrieval_mode=mode,
         provider=provider,
     )
@@ -31,7 +57,7 @@ def load_pipeline(mode: str, provider: str) -> Pipeline:
 with st.sidebar:
     st.header("Settings")
     retrieval_mode = st.selectbox("Retrieval Strategy", ["hybrid", "vector"], index=0)
-    provider = st.selectbox("LLM Provider", ["ollama", "openai", "gemini", "groq"], index=0)
+    provider = "gemini"
     top_k = st.slider("Retrieved chunks (top-k)", 3, 20, 10)
 
     st.markdown("---")
