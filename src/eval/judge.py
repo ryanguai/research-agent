@@ -68,12 +68,19 @@ Score the generated answer (1-5). Respond with ONLY a JSON object."""
 
 
 def _judge_gemini(user_msg: str, model: str | None) -> str:
-    from dotenv import load_dotenv
     from google import genai
     from google.genai import types
 
-    load_dotenv()
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    try:
+        import streamlit as st
+        api_key = st.secrets.get("GEMINI_API_KEY")
+    except Exception:
+        api_key = None
+    if not api_key:
+        from dotenv import load_dotenv
+        load_dotenv()
+        api_key = os.environ["GEMINI_API_KEY"]
+    client = genai.Client(api_key=api_key)
     response = client.models.generate_content(
         model=model or "gemini-3.1-flash-lite",
         contents=[

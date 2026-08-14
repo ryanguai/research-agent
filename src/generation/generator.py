@@ -51,11 +51,18 @@ class GenerationResult:
 
 
 def _get_env(key: str) -> str:
+    try:
+        import streamlit as st
+        val = st.secrets.get(key)
+        if val:
+            return val
+    except Exception:
+        pass
     from dotenv import load_dotenv
     load_dotenv()
     val = os.environ.get(key)
     if not val:
-        raise ValueError(f"Set {key} in your .env file")
+        raise ValueError(f"Set {key} in your .env or Streamlit secrets")
     return val
 
 
