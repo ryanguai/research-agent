@@ -19,7 +19,6 @@ def ensure_index():
     """Download and extract the pre-built index if not present."""
     if INDEX_DIR.exists() and any(INDEX_DIR.iterdir()):
         return
-    st.info("Downloading pre-built index (~193MB)... This only happens once.")
     INDEX_DIR.parent.mkdir(parents=True, exist_ok=True)
     tar_path = Path("data/index.tar.gz")
     subprocess.run(["curl", "-L", "-o", str(tar_path), INDEX_URL], check=True)
