@@ -1,0 +1,611 @@
+[
+  {
+    "question_id": "factual_000",
+    "category": "factual",
+    "config": "vector",
+    "answer": "Based on the provided excerpts, the generative market models presented are:\n\n* **DYSANOS**: Explicitly presented as the first generative market model (and generative option market model) built from smooth, strictly statically arbitrage-free SANOS option surfaces for all strikes and expiries, designed to generate entire paths of daily spot and option prices (According to *\"DYSANOS Generative Dynamic Smooth Arbitrage-free Non-parametric Option Surfaces\"* (arXiv: 2608.12587v1), Section: abstract and Section: conclusion).\n* **FlowLOB**: Presented as a deep generative model using flow matching for realistic, efficient, and controllable limit order book (L2 order book state) generation and market simulation (According to *\"FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching\"* (arXiv: 2608.13096v1), Section: introduction and Section: related work).",
+    "retrieved_arxiv_ids": [
+      "2608.08422v2",
+      "2608.07648v1",
+      "2608.13096v1",
+      "2608.11419v1",
+      "2608.12587v1",
+      "2608.11359v1"
+    ],
+    "retrieval_precision": 0.16666666666666666,
+    "retrieval_recall": 1.0,
+    "citations_correct": true,
+    "declined_correctly": null,
+    "judge_score": 5.0,
+    "judge_reasoning": "The generated answer correctly identifies DYSANOS as the generative market model with accurate citations and details matching the reference answer.",
+    "latency_ms": 7738.423109054565,
+    "cost_usd": 0.00041110000000000007
+  },
+  {
+    "question_id": "factual_001",
+    "category": "factual",
+    "config": "vector",
+    "answer": "I don't have enough information in the retrieved papers to answer this question confidently.",
+    "retrieved_arxiv_ids": [
+      "2608.09880v1",
+      "2608.13326v1",
+      "2608.13510v1",
+      "2608.10731v1",
+      "2608.11498v1",
+      "2608.10047v1",
+      "2608.11154v1",
+      "2608.10090v1",
+      "2608.09764v1"
+    ],
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "citations_correct": false,
+    "declined_correctly": false,
+    "judge_score": 0.0,
+    "judge_reasoning": "Judge failed to produce a score",
+    "latency_ms": 10474.238872528076,
+    "cost_usd": 0.00041400000000000003
+  },
+  {
+    "question_id": "factual_002",
+    "category": "factual",
+    "config": "vector",
+    "answer": "I don't have enough information in the retrieved papers to answer this question confidently.",
+    "retrieved_arxiv_ids": [
+      "2608.07385v1",
+      "2608.11742v1",
+      "2608.11492v1",
+      "2608.07894v1",
+      "2608.08721v1",
+      "2608.10137v1"
+    ],
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "citations_correct": false,
+    "declined_correctly": false,
+    "judge_score": 0.0,
+    "judge_reasoning": "Judge failed to produce a score",
+    "latency_ms": 5331.015825271606,
+    "cost_usd": 0.00039170000000000003
+  },
+  {
+    "question_id": "factual_003",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc00190 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_004",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1ebc0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_005",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc4d630 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_006",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5eb00 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_007",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc73250 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_008",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc71b10 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_009",
+    "category": "factual",
+    "config": "vector",
+    "answer": "Based on the provided excerpts, the task and framework of ranking-native pre-training and prompting for graph node ranking are defined as follows:\n\n### 1. Definition of the Node Ranking Task\nAccording to \"PreGress: Ranking-Native Pre-training and Prompting for Graph Node Ranking\" (arXiv: 2608.09016v1), Section: methods, the fundamental node ranking task is defined as:\n* **Input**: A graph $G = (V, E, X)$\u2014where $V$ is the node set, $E$ is the edge set, and $X \\in \\mathbb{R}^{N \\times d}$ is the node attribute matrix\u2014and a measure $m",
+    "retrieved_arxiv_ids": [
+      "2608.09016v1"
+    ],
+    "retrieval_precision": 1.0,
+    "retrieval_recall": 1.0,
+    "citations_correct": true,
+    "declined_correctly": null,
+    "judge_score": 2.0,
+    "judge_reasoning": "The generated answer is incomplete and cuts off mid-sentence, failing to provide a full definition or address the core goal of the task.",
+    "latency_ms": 4412.322044372559,
+    "cost_usd": 0.00042080000000000004
+  },
+  {
+    "question_id": "factual_010",
+    "category": "factual",
+    "config": "vector",
+    "answer": "According to \"PreGress: Ranking-Native Pre-training and Prompting for Graph Node Ranking\" (arXiv: 2608.09016v1), Section: experiments, the six public graphs used for inductive evaluation are:\n\n1. **soc-brightkite (BK)** \u2013 Social network ($|V| = 5.7 \\times 10^4$, $|E| = 2.1 \\times 10^5$, avg. deg. $7.0$)\n2. **socfb-OR (FB)** \u2013 Facebook network ($|V| = 6.3 \\times 10^4$, $|E| = 8.2 \\times 10^5$, avg. deg. $25.0$)\n3. **Flickr (FL)** \u2013 Image network ($|V| = 8.9 \\times 10^4$, $|E| = 8.9 \\times 10^5$, avg. deg. $10.0$)\n4. **youtube (YT)** \u2013 Video network ($|V| = 1.1 \\times 10^6$, $|E| = 3.0 \\times 10^6$, avg. deg. $5.3$)\n5. **web-spam (WS)** \u2013 Email network ($|V| = 4.8 \\times 10^3$, $|E| = 3.7 \\times 10^4$, avg. deg. $15.7$)\n6. **indochina-2004 (ID)** \u2013 Web network ($|V| = 1.1 \\times 10^4$, $|E| = 4.7 \\times 10^4$, avg. deg. $8.0$)\n\n*(Note: The paper also includes two user\u2013item bipartite graphs, **Yelp2018** and **MovieLens-100K**, in its total set of evaluation graphs).*",
+    "retrieved_arxiv_ids": [
+      "2608.08422v2",
+      "2608.09016v1"
+    ],
+    "retrieval_precision": 0.5,
+    "retrieval_recall": 1.0,
+    "citations_correct": true,
+    "declined_correctly": null,
+    "judge_score": 5.0,
+    "judge_reasoning": "The generated answer precisely lists the six public graphs evaluated in PreGress along with accurate details, citations, and an additional clarification regarding the other datasets used.",
+    "latency_ms": 11815.161943435669,
+    "cost_usd": 0.0005735
+  },
+  {
+    "question_id": "factual_011",
+    "category": "factual",
+    "config": "vector",
+    "answer": "I don't have enough information in the retrieved papers to answer this question confidently.",
+    "retrieved_arxiv_ids": [
+      "2608.08414v1",
+      "2608.10279v1",
+      "2608.11654v1",
+      "2608.07911v2",
+      "2608.09805v1"
+    ],
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "citations_correct": false,
+    "declined_correctly": false,
+    "judge_score": 0.0,
+    "judge_reasoning": "Judge failed to produce a score",
+    "latency_ms": 6419.920206069946,
+    "cost_usd": 0.00043220000000000004
+  },
+  {
+    "question_id": "factual_012",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5c250 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_013",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1fd90 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_014",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc32410 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_015",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc03f70 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_016",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f43eb00 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_017",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f503d90 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_018",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc03a60 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_019",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1d600 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_020",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc31420 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_021",
+    "category": "factual",
+    "config": "vector",
+    "answer": "I don't have enough information in the retrieved papers to answer this question confidently.",
+    "retrieved_arxiv_ids": [
+      "2608.07641v1",
+      "2608.12511v1",
+      "2608.12535v1",
+      "2608.07370v1",
+      "2608.08881v1",
+      "2608.08503v1"
+    ],
+    "retrieval_precision": 0.0,
+    "retrieval_recall": 0.0,
+    "citations_correct": false,
+    "declined_correctly": false,
+    "judge_score": 1.0,
+    "judge_reasoning": "The generated answer failed to answer the question, incorrectly stating it lacked enough information to identify the authors.",
+    "latency_ms": 5500.004053115845,
+    "cost_usd": 0.00031170000000000004
+  },
+  {
+    "question_id": "factual_022",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5d5d0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_023",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc875e0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_024",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5d3c0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_025",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb7520 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_026",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb4b20 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_027",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fca6860 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_028",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc86c80 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_029",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5f970 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_030",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5ed70 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_031",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5f790 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_032",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5e710 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_033",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f502800 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_034",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fce1db0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_035",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fce2320 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_036",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f502a70 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_037",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fce16f0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_038",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc321d0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_039",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5dd20 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_040",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1c4f0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_041",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc4e770 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_042",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb6b90 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_043",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fca4160 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_044",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fca5240 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_045",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc4f280 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_046",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb5270 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_047",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1f670 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_048",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc33d00 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_049",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb6ce0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_050",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f502860 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_051",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcf46d0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_052",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fce1f00 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "factual_053",
+    "category": "factual",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcf7b20 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_054",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fce0bb0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_055",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc00730 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_056",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc324a0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_057",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1dc00 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_058",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5e560 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_059",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fca41f0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_060",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc4c340 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_061",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb4f70 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_062",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc4fa30 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_063",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x310c0b670 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_064",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc71450 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_065",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5f520 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_066",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc87040 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_067",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc33790 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_068",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f5008e0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_069",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc03c40 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_070",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc03370 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_071",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcf6f80 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_072",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17f5023b0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "synthesis_073",
+    "category": "synthesis",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc5c0a0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_074",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc319c0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_075",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1e710 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_076",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x310c0a980 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_077",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc4f1f0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_078",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x310c29c90 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_079",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x310c297e0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_080",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x310c1e9e0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_081",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fca7ac0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_082",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fcb5ab0 state=finished raised ClientError>]"
+  },
+  {
+    "question_id": "adversarial_083",
+    "category": "adversarial",
+    "config": "vector",
+    "error": "RetryError[<Future at 0x17fc1f550 state=finished raised ClientError>]"
+  }
+]

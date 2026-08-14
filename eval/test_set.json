@@ -1,0 +1,1648 @@
+[
+  {
+    "question": "What is the name of the generative market model presented in the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12587v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "DYSANOS"
+    ],
+    "should_decline": false,
+    "reference_answer": "DYSANOS",
+    "question_id": "factual_000"
+  },
+  {
+    "question": "What is the main goal of the AR(1) model presented in the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12587v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "to",
+      "generate",
+      "entire",
+      "paths",
+      "of",
+      "daily",
+      "spot",
+      "and",
+      "option",
+      "prices"
+    ],
+    "should_decline": false,
+    "reference_answer": "to generate entire paths of daily spot and option prices for years in the future",
+    "question_id": "factual_001"
+  },
+  {
+    "question": "What is the name of the decoder optimized for machine learning?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12587v1"
+    ],
+    "expected_sections": [
+      "2.3"
+    ],
+    "expected_answer_keywords": [
+      "ML-SANOS"
+    ],
+    "should_decline": false,
+    "reference_answer": "ML-SANOS",
+    "question_id": "factual_002"
+  },
+  {
+    "question": "What is the main challenge in sample-efficient reinforcement learning for autonomous driving?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.10386v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "the",
+      "trade-off",
+      "between",
+      "data",
+      "efficiency",
+      "and",
+      "model",
+      "bias"
+    ],
+    "should_decline": false,
+    "reference_answer": "the trade-off between data efficiency and model bias",
+    "question_id": "factual_003"
+  },
+  {
+    "question": "What is the main goal of the Dreamer-SAC framework?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.10386v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "to",
+      "reduce",
+      "the",
+      "reliance",
+      "on",
+      "costly",
+      "environment",
+      "interactions"
+    ],
+    "should_decline": false,
+    "reference_answer": "to reduce the reliance on costly environment interactions",
+    "question_id": "factual_004"
+  },
+  {
+    "question": "What is the main challenge in policy optimization over learned dynamics?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.10386v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "sensitive",
+      "to",
+      "prediction",
+      "errors"
+    ],
+    "should_decline": false,
+    "reference_answer": "sensitive to prediction errors",
+    "question_id": "factual_005"
+  },
+  {
+    "question": "What is the name of the proposed method?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11704v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "DTW-GBC"
+    ],
+    "should_decline": false,
+    "reference_answer": "DTW-GBC",
+    "question_id": "factual_006"
+  },
+  {
+    "question": "How many benchmark time-series classification datasets were used in the experiments?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11704v1"
+    ],
+    "expected_sections": [
+      "experiments"
+    ],
+    "expected_answer_keywords": [
+      "four"
+    ],
+    "should_decline": false,
+    "reference_answer": "four",
+    "question_id": "factual_007"
+  },
+  {
+    "question": "What is the name of the archive from which two univariate datasets were selected?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11704v1"
+    ],
+    "expected_sections": [
+      "experiments"
+    ],
+    "expected_answer_keywords": [
+      "UCR2018"
+    ],
+    "should_decline": false,
+    "reference_answer": "UCR2018",
+    "question_id": "factual_008"
+  },
+  {
+    "question": "What is the task of ranking-native pre-training and prompting for graph node ranking?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09016v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "Addressing",
+      "the",
+      "challenges",
+      "of",
+      "ranking",
+      "items",
+      "according",
+      "to",
+      "their",
+      "relevance"
+    ],
+    "should_decline": false,
+    "reference_answer": "Addressing the challenges of ranking items according to their relevance or importance in modern information retrieval systems.",
+    "question_id": "factual_009"
+  },
+  {
+    "question": "What are the six public graphs used to evaluate PreGress?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09016v1"
+    ],
+    "expected_sections": [
+      "experiments"
+    ],
+    "expected_answer_keywords": [
+      "soc-brightkite",
+      "(BK),",
+      "socfb-OR",
+      "(FB),",
+      "Flickr",
+      "(FL),",
+      "youtube",
+      "(YT),",
+      "web-spam",
+      "(WS),"
+    ],
+    "should_decline": false,
+    "reference_answer": "soc-brightkite (BK), socfb-OR (FB), Flickr (FL), youtube (YT), web-spam (WS), indochina-2004 (ID) and MovieLens-100K (MovieLens)",
+    "question_id": "factual_010"
+  },
+  {
+    "question": "What is the purpose of PreGress?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09016v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "A",
+      "ranking-native",
+      "pre-training",
+      "and",
+      "prompting",
+      "framework",
+      "for",
+      "learning",
+      "transferable",
+      "relevance"
+    ],
+    "should_decline": false,
+    "reference_answer": "A ranking-native pre-training and prompting framework for learning transferable relevance scoring functions over graphs.",
+    "question_id": "factual_011"
+  },
+  {
+    "question": "What is the main challenge in low-resource languages such as Bangla?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08503v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "Mathematical",
+      "reasoning",
+      "remains",
+      "challenging"
+    ],
+    "should_decline": false,
+    "reference_answer": "Mathematical reasoning remains challenging",
+    "question_id": "factual_012"
+  },
+  {
+    "question": "What is the name of the Bangla mathematical reasoning dataset?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08503v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "MATHSHIKKHA"
+    ],
+    "should_decline": false,
+    "reference_answer": "MATHSHIKKHA",
+    "question_id": "factual_013"
+  },
+  {
+    "question": "What is the name of the large language model used in the study?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08503v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "GPT-5.4"
+    ],
+    "should_decline": false,
+    "reference_answer": "GPT-5.4",
+    "question_id": "factual_014"
+  },
+  {
+    "question": "Who introduced the concept of Probably Approximately Correct (PAC) Learnability?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11648v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "Valiant"
+    ],
+    "should_decline": false,
+    "reference_answer": "Valiant",
+    "question_id": "factual_015"
+  },
+  {
+    "question": "In what year was Valiant's concept of PAC Learnability introduced?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11648v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "1984"
+    ],
+    "should_decline": false,
+    "reference_answer": "1984",
+    "question_id": "factual_016"
+  },
+  {
+    "question": "Who presented a quantum algorithm for factoring integers in 1997?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11648v1"
+    ],
+    "expected_sections": [
+      "related work"
+    ],
+    "expected_answer_keywords": [
+      "Shor"
+    ],
+    "should_decline": false,
+    "reference_answer": "Shor",
+    "question_id": "factual_017"
+  },
+  {
+    "question": "What is the core paradigm for AI applications that has strong capabilities in tool use, code generation, scientific problem solving, and dialogue simulation?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12888v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "Large",
+      "language",
+      "model",
+      "(LLM)"
+    ],
+    "should_decline": false,
+    "reference_answer": "Large language model (LLM)",
+    "question_id": "factual_018"
+  },
+  {
+    "question": "What is the fundamental bottleneck that LLM agents face when operating over long-term tasks and multi-turn interactions?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12888v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "Memory"
+    ],
+    "should_decline": false,
+    "reference_answer": "Memory",
+    "question_id": "factual_019"
+  },
+  {
+    "question": "What is the choice that agent memory systems face: compress into internal or semi-structured memory, or preserve external records and retrieve from them?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12888v1"
+    ],
+    "expected_sections": [
+      "related work"
+    ],
+    "expected_answer_keywords": [
+      "Compress",
+      "into",
+      "internal",
+      "or",
+      "semi-structured",
+      "memory,",
+      "or",
+      "preserve",
+      "external",
+      "records"
+    ],
+    "should_decline": false,
+    "reference_answer": "Compress into internal or semi-structured memory, or preserve external records and retrieve from them",
+    "question_id": "factual_020"
+  },
+  {
+    "question": "Who are the authors of the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09351v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "Nikita",
+      "Kozodoi,",
+      "Zainab",
+      "Afolabi,",
+      "and",
+      "Jack",
+      "Butler"
+    ],
+    "should_decline": false,
+    "reference_answer": "Nikita Kozodoi, Zainab Afolabi, and Jack Butler",
+    "question_id": "factual_021"
+  },
+  {
+    "question": "What is the main goal of the Test-Time Augmentation (TTA) approach?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09351v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "to",
+      "improve",
+      "accuracy",
+      "without",
+      "spending",
+      "more",
+      "compute",
+      "at",
+      "inference",
+      "time"
+    ],
+    "should_decline": false,
+    "reference_answer": "to improve accuracy without spending more compute at inference time",
+    "question_id": "factual_022"
+  },
+  {
+    "question": "What is the metric that matters in deployment?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09351v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "the",
+      "accuracy",
+      "gained",
+      "per",
+      "unit",
+      "of",
+      "compute"
+    ],
+    "should_decline": false,
+    "reference_answer": "the accuracy gained per unit of compute",
+    "question_id": "factual_023"
+  },
+  {
+    "question": "What is the primary role of dialects in regional communication and cultural expression?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08067v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "regional",
+      "communication",
+      "and",
+      "cultural",
+      "expression"
+    ],
+    "should_decline": false,
+    "reference_answer": "regional communication and cultural expression",
+    "question_id": "factual_024"
+  },
+  {
+    "question": "What is the limitation of existing Chinese dialect support in mainstream speech dialogue models?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08067v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "limited"
+    ],
+    "should_decline": false,
+    "reference_answer": "limited",
+    "question_id": "factual_025"
+  },
+  {
+    "question": "What is the main difference between end-to-end large speech models and cascaded systems?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08067v1"
+    ],
+    "expected_sections": [
+      "related work"
+    ],
+    "expected_answer_keywords": [
+      "end-to-end",
+      "large",
+      "speech",
+      "models",
+      "directly",
+      "map",
+      "speech",
+      "inputs",
+      "to",
+      "text"
+    ],
+    "should_decline": false,
+    "reference_answer": "end-to-end large speech models directly map speech inputs to text and speech outputs",
+    "question_id": "factual_026"
+  },
+  {
+    "question": "What is the name of the pseudo-label selection method proposed in the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12773v1"
+    ],
+    "expected_sections": [
+      "preliminary"
+    ],
+    "expected_answer_keywords": [
+      "CW-BASS",
+      "v2"
+    ],
+    "should_decline": false,
+    "reference_answer": "CW-BASS v2",
+    "question_id": "factual_027"
+  },
+  {
+    "question": "What is the name of the foundation encoder used in the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12773v1"
+    ],
+    "expected_sections": [
+      "method"
+    ],
+    "expected_answer_keywords": [
+      "DINOv"
+    ],
+    "should_decline": false,
+    "reference_answer": "DINOv",
+    "question_id": "factual_028"
+  },
+  {
+    "question": "What is the name of the specialized backbone used in the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12773v1"
+    ],
+    "expected_sections": [
+      "specialised backbones"
+    ],
+    "expected_answer_keywords": [
+      "ResNet-101"
+    ],
+    "should_decline": false,
+    "reference_answer": "ResNet-101",
+    "question_id": "factual_029"
+  },
+  {
+    "question": "Who are the authors of the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.07419v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Ruochen",
+      "Jin,",
+      "Zhanliang",
+      "Wang,",
+      "Zongyu",
+      "Dai,",
+      "Jiancong",
+      "Xiao,",
+      "and",
+      "Bojian"
+    ],
+    "should_decline": false,
+    "reference_answer": "Ruochen Jin, Zhanliang Wang, Zongyu Dai, Jiancong Xiao, and Bojian Hou",
+    "question_id": "factual_030"
+  },
+  {
+    "question": "What is the motivation for modifying model parameters during training?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.07419v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "To",
+      "improve",
+      "calibration",
+      "and",
+      "target",
+      "overconfidence",
+      "by",
+      "discouraging",
+      "overly",
+      "concentrated"
+    ],
+    "should_decline": false,
+    "reference_answer": "To improve calibration and target overconfidence by discouraging overly concentrated predictions",
+    "question_id": "factual_031"
+  },
+  {
+    "question": "What is the calibration objective proposed in the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.07419v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "Maximizing",
+      "the",
+      "entropy",
+      "of",
+      "predictive",
+      "distributions"
+    ],
+    "should_decline": false,
+    "reference_answer": "Maximizing the entropy of predictive distributions",
+    "question_id": "factual_032"
+  },
+  {
+    "question": "What is the name of the benchmark for personalized decision making in tool-use LLMs?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.10042v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "UserToolBench"
+    ],
+    "should_decline": false,
+    "reference_answer": "UserToolBench",
+    "question_id": "factual_033"
+  },
+  {
+    "question": "Where is the first author from?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.10042v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Sun",
+      "Yat-Sen",
+      "University"
+    ],
+    "should_decline": false,
+    "reference_answer": "Sun Yat-Sen University",
+    "question_id": "factual_034"
+  },
+  {
+    "question": "What are some of the tasks that UserToolBench tests for?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.10042v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "inferring",
+      "latent",
+      "user",
+      "preferences,",
+      "recognizing",
+      "when",
+      "clarification",
+      "is",
+      "needed,",
+      "and"
+    ],
+    "should_decline": false,
+    "reference_answer": "inferring latent user preferences, recognizing when clarification is needed, and producing user-aligned tool-call trajectories",
+    "question_id": "factual_035"
+  },
+  {
+    "question": "What is the main difference between classical optimization and modern applications?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09565v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Classical",
+      "optimization",
+      "deals",
+      "with",
+      "fixed,",
+      "time-invariant",
+      "objective",
+      "functions,",
+      "while",
+      "modern"
+    ],
+    "should_decline": false,
+    "reference_answer": "Classical optimization deals with fixed, time-invariant objective functions, while modern applications operate in dynamic environments where data arrive sequentially.",
+    "question_id": "factual_036"
+  },
+  {
+    "question": "What is the name of the theorem mentioned in Lemma 5?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09565v1"
+    ],
+    "expected_sections": [
+      "appendix"
+    ],
+    "expected_answer_keywords": [
+      "Mean",
+      "Hessian",
+      "Theorem"
+    ],
+    "should_decline": false,
+    "reference_answer": "Mean Hessian Theorem",
+    "question_id": "factual_037"
+  },
+  {
+    "question": "What is the sequence {xt}t\u22650 defined as?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.09565v1"
+    ],
+    "expected_sections": [
+      "appendix"
+    ],
+    "expected_answer_keywords": [
+      "xt+1",
+      "=",
+      "\u03b1xt",
+      "+",
+      "bt"
+    ],
+    "should_decline": false,
+    "reference_answer": "xt+1 = \u03b1xt + bt",
+    "question_id": "factual_038"
+  },
+  {
+    "question": "Who are the authors of the paper?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08922v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Qucheng",
+      "Gao,",
+      "Zuyi",
+      "Yang,",
+      "and",
+      "Xiao",
+      "Chen"
+    ],
+    "should_decline": false,
+    "reference_answer": "Qucheng Gao, Zuyi Yang, and Xiao Chen",
+    "question_id": "factual_039"
+  },
+  {
+    "question": "Where is the first author from?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08922v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Boston",
+      "College,",
+      "Massachusetts",
+      "02467,",
+      "USA"
+    ],
+    "should_decline": false,
+    "reference_answer": "Boston College, Massachusetts 02467, USA",
+    "question_id": "factual_040"
+  },
+  {
+    "question": "Where is the second author from?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08922v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Tsinghua",
+      "University,",
+      "Beijing",
+      "100084,",
+      "China"
+    ],
+    "should_decline": false,
+    "reference_answer": "Tsinghua University, Beijing 100084, China",
+    "question_id": "factual_041"
+  },
+  {
+    "question": "What is the term used to describe the fairness issue in SID-based generative recommendation?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12845v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "Token",
+      "Frequency",
+      "Bias"
+    ],
+    "should_decline": false,
+    "reference_answer": "Token Frequency Bias",
+    "question_id": "factual_042"
+  },
+  {
+    "question": "What is the problem that traditional discriminative recommender systems face?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12845v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "item",
+      "cold-start",
+      "problem",
+      "and",
+      "poor",
+      "transferability",
+      "of",
+      "learned",
+      "embedding",
+      "spaces"
+    ],
+    "should_decline": false,
+    "reference_answer": "item cold-start problem and poor transferability of learned embedding spaces across domains",
+    "question_id": "factual_043"
+  },
+  {
+    "question": "What is the approach used in LC-Rec to map item features into discrete token sequences?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.12845v1"
+    ],
+    "expected_sections": [
+      "related work"
+    ],
+    "expected_answer_keywords": [
+      "Residual",
+      "Quantized",
+      "Variational",
+      "Autoencoders",
+      "(RQ-VAE)"
+    ],
+    "should_decline": false,
+    "reference_answer": "Residual Quantized Variational Autoencoders (RQ-VAE)",
+    "question_id": "factual_044"
+  },
+  {
+    "question": "What is the primary issue with fine-tuning Multimodal Large Language Models (MLLMs) on downstream tasks?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11758v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "Catastrophic",
+      "forgetting,",
+      "where",
+      "newly",
+      "learned",
+      "task-specific",
+      "knowledge",
+      "degrades",
+      "previously",
+      "acquired"
+    ],
+    "should_decline": false,
+    "reference_answer": "Catastrophic forgetting, where newly learned task-specific knowledge degrades previously acquired capabilities.",
+    "question_id": "factual_045"
+  },
+  {
+    "question": "Who are the authors of the paper 'AWARe: Mitigating Catastrophic Forgetting via Activation-Weighted Adaptive REtention'?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11758v1"
+    ],
+    "expected_sections": [
+      "preamble"
+    ],
+    "expected_answer_keywords": [
+      "Juncheng",
+      "Liao,",
+      "Jinfan",
+      "Lv,",
+      "Guoming",
+      "Wang,",
+      "Jupeng",
+      "Zheng,",
+      "Ling",
+      "Xiao,"
+    ],
+    "should_decline": false,
+    "reference_answer": "Juncheng Liao, Jinfan Lv, Guoming Wang, Jupeng Zheng, Ling Xiao, Siliang Tang",
+    "question_id": "factual_046"
+  },
+  {
+    "question": "What is the main problem that the authors of the paper are trying to address?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11758v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "Catastrophic",
+      "forgetting",
+      "in",
+      "Multimodal",
+      "Large",
+      "Language",
+      "Models",
+      "(MLLMs)",
+      "during",
+      "fine-tuning"
+    ],
+    "should_decline": false,
+    "reference_answer": "Catastrophic forgetting in Multimodal Large Language Models (MLLMs) during fine-tuning on downstream tasks.",
+    "question_id": "factual_047"
+  },
+  {
+    "question": "Can sparse networks produced by DAP match or exceed the out-of-distribution accuracy of dense domain generalization baselines?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08624v1"
+    ],
+    "expected_sections": [
+      "experiments"
+    ],
+    "expected_answer_keywords": [
+      "Yes"
+    ],
+    "should_decline": false,
+    "reference_answer": "Yes",
+    "question_id": "factual_048"
+  },
+  {
+    "question": "At what sparsity levels does DAP match or surpass dense domain generalization methods?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08624v1"
+    ],
+    "expected_sections": [
+      "methods"
+    ],
+    "expected_answer_keywords": [
+      "20\u201340%",
+      "sparsity"
+    ],
+    "should_decline": false,
+    "reference_answer": "20\u201340% sparsity",
+    "question_id": "factual_049"
+  },
+  {
+    "question": "What is the optimal sparsity level for DAP?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.08624v1"
+    ],
+    "expected_sections": [
+      "methods"
+    ],
+    "expected_answer_keywords": [
+      "Not",
+      "specified"
+    ],
+    "should_decline": false,
+    "reference_answer": "Not specified",
+    "question_id": "factual_050"
+  },
+  {
+    "question": "What is the main challenge faced by dominant pretraining paradigms in EEG foundation models?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11656v1"
+    ],
+    "expected_sections": [
+      "abstract"
+    ],
+    "expected_answer_keywords": [
+      "masked",
+      "autoencoding",
+      "tends",
+      "to",
+      "prioritize",
+      "low-level",
+      "signal",
+      "reconstruction",
+      "over",
+      "task-relevant"
+    ],
+    "should_decline": false,
+    "reference_answer": "masked autoencoding tends to prioritize low-level signal reconstruction over task-relevant semantics",
+    "question_id": "factual_051"
+  },
+  {
+    "question": "What have foundation models achieved across diverse modalities?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11656v1"
+    ],
+    "expected_sections": [
+      "introduction"
+    ],
+    "expected_answer_keywords": [
+      "remarkable",
+      "advances",
+      "across",
+      "vision,",
+      "language,",
+      "and",
+      "speech"
+    ],
+    "should_decline": false,
+    "reference_answer": "remarkable advances across vision, language, and speech",
+    "question_id": "factual_052"
+  },
+  {
+    "question": "What is the main component of BLPM that learns universal continuous EEG representations?",
+    "category": "factual",
+    "expected_arxiv_ids": [
+      "2608.11656v1"
+    ],
+    "expected_sections": [
+      "methods"
+    ],
+    "expected_answer_keywords": [
+      "a",
+      "CELP",
+      "encoder"
+    ],
+    "should_decline": false,
+    "reference_answer": "a CELP encoder",
+    "question_id": "factual_053"
+  },
+  {
+    "question": "What is the primary focus of CoMedBench, which differs from the approach of RevCRN?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12805v1",
+      "2608.11362v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "CoMedBench",
+      "focuses",
+      "on",
+      "synthetic",
+      "medical",
+      "data",
+      "fidelity",
+      "and",
+      "downstream",
+      "utility,"
+    ],
+    "should_decline": false,
+    "reference_answer": "CoMedBench focuses on synthetic medical data fidelity and downstream utility, whereas RevCRN focuses on reversible analog computation using chemical reaction networks.",
+    "question_id": "synthesis_054"
+  },
+  {
+    "question": "How does RevCRN's approach to reversible analog computation relate to the goals of CoMedBench?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12805v1",
+      "2608.11362v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "RevCRN's",
+      "approach",
+      "can",
+      "be",
+      "seen",
+      "as",
+      "a",
+      "potential",
+      "method",
+      "for"
+    ],
+    "should_decline": false,
+    "reference_answer": "RevCRN's approach can be seen as a potential method for generating synthetic medical data that can be used to evaluate the fidelity and utility of data in CoMedBench.",
+    "question_id": "synthesis_055"
+  },
+  {
+    "question": "How do the authors of MirrorWorld approach handling the non-stationarity of video diffusion models, in contrast to the approach taken in Second Order Drifting Models?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.07924v1",
+      "2608.07463v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "MirrorWorld",
+      "uses",
+      "a",
+      "novel",
+      "mirror",
+      "reflection",
+      "generation",
+      "framework",
+      "that",
+      "tackles"
+    ],
+    "should_decline": false,
+    "reference_answer": "MirrorWorld uses a novel mirror reflection generation framework that tackles the non-stationarity of video diffusion models, whereas Second Order Drifting Models employ a second-order drift model to handle non-stationarity.",
+    "question_id": "synthesis_056"
+  },
+  {
+    "question": "What is the primary application of Second Order Drifting Models, and how does it differ from the application of MirrorWorld?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.07924v1",
+      "2608.07463v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Second",
+      "Order",
+      "Drifting",
+      "Models",
+      "are",
+      "primarily",
+      "designed",
+      "for",
+      "time",
+      "series"
+    ],
+    "should_decline": false,
+    "reference_answer": "Second Order Drifting Models are primarily designed for time series forecasting, whereas MirrorWorld is designed for generating mirror reflections in videos.",
+    "question_id": "synthesis_057"
+  },
+  {
+    "question": "How does EGRL differ from the token initialization approach in LLM-based generative recommendation in terms of preserving item semantics?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12906v1",
+      "2608.07816v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "EGRL",
+      "uses",
+      "a",
+      "relation-aware",
+      "learning",
+      "approach,",
+      "whereas",
+      "the",
+      "token",
+      "initialization"
+    ],
+    "should_decline": false,
+    "reference_answer": "EGRL uses a relation-aware learning approach, whereas the token initialization approach in LLM-based generative recommendation relies on preserving item semantics.",
+    "question_id": "synthesis_058"
+  },
+  {
+    "question": "What is the primary goal of EGRL, and how does it relate to the token initialization approach in LLM-based generative recommendation?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12906v1",
+      "2608.07816v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "The",
+      "primary",
+      "goal",
+      "of",
+      "EGRL",
+      "is",
+      "to",
+      "predict",
+      "RNA-protein",
+      "interactions,"
+    ],
+    "should_decline": false,
+    "reference_answer": "The primary goal of EGRL is to predict RNA-protein interactions, whereas the token initialization approach in LLM-based generative recommendation aims to preserve item semantics for free.",
+    "question_id": "synthesis_059"
+  },
+  {
+    "question": "How do efficient Hessian-free methods for multi-objective bilevel optimization differ from the approach used in Vero, which involves formal verification of software repositories?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12704v1",
+      "2608.13522v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Not",
+      "enough",
+      "information",
+      "available"
+    ],
+    "should_decline": false,
+    "reference_answer": "Not enough information available",
+    "question_id": "synthesis_060"
+  },
+  {
+    "question": "Can the concepts of efficient Hessian-free methods for multi-objective bilevel optimization and formal verification of software repositories be applied to nonconvex lower-level problems?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12704v1",
+      "2608.13522v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Not",
+      "enough",
+      "information",
+      "available"
+    ],
+    "should_decline": false,
+    "reference_answer": "Not enough information available",
+    "question_id": "synthesis_061"
+  },
+  {
+    "question": "How does Power Law Graph Attention differ from scaled dot-product attention in terms of its representation capabilities?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.10288v1",
+      "2608.13510v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Power",
+      "Law",
+      "Graph",
+      "Attention",
+      "generalizes",
+      "scaled",
+      "dot-product",
+      "attention",
+      "by",
+      "replacing"
+    ],
+    "should_decline": false,
+    "reference_answer": "Power Law Graph Attention generalizes scaled dot-product attention by replacing the fixed bilinear form with a power law decoder representation",
+    "question_id": "synthesis_062"
+  },
+  {
+    "question": "What is the primary limitation of Power Law Graph Attention identified in Paper A?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.10288v1",
+      "2608.13510v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Power",
+      "Law",
+      "Graph",
+      "Attention",
+      "suffers",
+      "from",
+      "empirical",
+      "collapse",
+      "at",
+      "inference"
+    ],
+    "should_decline": false,
+    "reference_answer": "Power Law Graph Attention suffers from empirical collapse at inference",
+    "question_id": "synthesis_063"
+  },
+  {
+    "question": "How do the authors of Paper A and Paper B use large language models, and what is the primary difference in their applications?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.10908v1",
+      "2608.08822v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Paper",
+      "A",
+      "uses",
+      "LVLMs",
+      "to",
+      "judge",
+      "temporal",
+      "reasoning",
+      "in",
+      "image"
+    ],
+    "should_decline": false,
+    "reference_answer": "Paper A uses LVLMs to judge temporal reasoning in image sequences, whereas Paper B uses large language models to generate complexity-validated decision scenarios.",
+    "question_id": "synthesis_064"
+  },
+  {
+    "question": "What is the focus of temporal reasoning in Paper A, and how does it relate to the decision-making process in Paper B?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.10908v1",
+      "2608.08822v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Paper",
+      "A",
+      "focuses",
+      "on",
+      "temporal",
+      "reasoning",
+      "in",
+      "image",
+      "sequences,",
+      "whereas"
+    ],
+    "should_decline": false,
+    "reference_answer": "Paper A focuses on temporal reasoning in image sequences, whereas Paper B generates decision scenarios that require complexity-validated decision-making.",
+    "question_id": "synthesis_065"
+  },
+  {
+    "question": "How does SteerBench-Work differ from the adaptive jailbreak robustness benchmarking in Paper B?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12654v1",
+      "2608.08542v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Not",
+      "specified"
+    ],
+    "should_decline": false,
+    "reference_answer": "Not specified",
+    "question_id": "synthesis_066"
+  },
+  {
+    "question": "What is the primary focus of SteerBench-Work compared to the skill-merged LLMs in Paper B?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.12654v1",
+      "2608.08542v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Agent",
+      "steering",
+      "at",
+      "action",
+      "boundaries"
+    ],
+    "should_decline": false,
+    "reference_answer": "Agent steering at action boundaries",
+    "question_id": "synthesis_067"
+  },
+  {
+    "question": "How do the approaches to uncertainty in Actionable Hallucination Detection and Physics-Informed Condition Monitoring of SiC Power Modules differ in their application domains?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.10430v1",
+      "2608.08363v2"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Actionable",
+      "Hallucination",
+      "Detection",
+      "focuses",
+      "on",
+      "translating",
+      "latent",
+      "uncertainty",
+      "for",
+      "agentic"
+    ],
+    "should_decline": false,
+    "reference_answer": "Actionable Hallucination Detection focuses on translating latent uncertainty for agentic critique in AI systems, whereas Physics-Informed Condition Monitoring of SiC Power Modules applies similar principles to monitor the condition of SiC power modules in real-world electronics.",
+    "question_id": "synthesis_068"
+  },
+  {
+    "question": "What is the primary goal of translating latent uncertainty in Actionable Hallucination Detection, and how does it relate to the condition monitoring approach in Physics-Informed Condition Monitoring of SiC Power Modules?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.10430v1",
+      "2608.08363v2"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "The",
+      "primary",
+      "goal",
+      "of",
+      "translating",
+      "latent",
+      "uncertainty",
+      "in",
+      "Actionable",
+      "Hallucination"
+    ],
+    "should_decline": false,
+    "reference_answer": "The primary goal of translating latent uncertainty in Actionable Hallucination Detection is to enable agentic critique, whereas in Physics-Informed Condition Monitoring of SiC Power Modules, this approach is used to inform condition monitoring decisions in real-world electronics.",
+    "question_id": "synthesis_069"
+  },
+  {
+    "question": "What is the primary focus of the RAG-Based Auto-Configuration for Industrial Fieldbus Devices paper, and how does it differ from the focus of the Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment paper?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.08618v1",
+      "2608.12145v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "The",
+      "RAG-Based",
+      "Auto-Configuration",
+      "for",
+      "Industrial",
+      "Fieldbus",
+      "Devices",
+      "paper",
+      "focuses",
+      "on"
+    ],
+    "should_decline": false,
+    "reference_answer": "The RAG-Based Auto-Configuration for Industrial Fieldbus Devices paper focuses on auto-configuration for industrial fieldbus devices, whereas the Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment paper focuses on autonomous rehabilitation systems.",
+    "question_id": "synthesis_070"
+  },
+  {
+    "question": "Do the authors of either paper mention the use of machine learning or AI in their respective applications, and if so, what types of machine learning or AI are used?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.08618v1",
+      "2608.12145v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Yes,",
+      "the",
+      "authors",
+      "of",
+      "both",
+      "papers",
+      "mention",
+      "the",
+      "use",
+      "of"
+    ],
+    "should_decline": false,
+    "reference_answer": "Yes, the authors of both papers mention the use of machine learning or AI in their respective applications. The RAG-Based Auto-Configuration for Industrial Fieldbus Devices paper uses RAG-based auto-configuration, while the Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment paper uses skeletal motion prediction and joint-level performance assessment.",
+    "question_id": "synthesis_071"
+  },
+  {
+    "question": "How does Power Law Graph Attention differ from scaled dot-product attention in terms of representation verbalization?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.13538v1",
+      "2608.10288v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "Power",
+      "Law",
+      "Graph",
+      "Attention",
+      "generalizes",
+      "scaled",
+      "dot-product",
+      "attention",
+      "by",
+      "replacing"
+    ],
+    "should_decline": false,
+    "reference_answer": "Power Law Graph Attention generalizes scaled dot-product attention by replacing the fixed bilinear form with a power law form, allowing for more flexible representation verbalization.",
+    "question_id": "synthesis_072"
+  },
+  {
+    "question": "What is the main contribution of SAEVerbalizer in comparison to existing methods?",
+    "category": "synthesis",
+    "expected_arxiv_ids": [
+      "2608.13538v1",
+      "2608.10288v1"
+    ],
+    "expected_sections": [],
+    "expected_answer_keywords": [
+      "SAEVerbalizer",
+      "generates",
+      "explanations",
+      "for",
+      "sparse",
+      "autoencoder",
+      "features",
+      "via",
+      "representation",
+      "verbalization,"
+    ],
+    "should_decline": false,
+    "reference_answer": "SAEVerbalizer generates explanations for sparse autoencoder features via representation verbalization, providing a new approach to understanding complex neural network representations.",
+    "question_id": "synthesis_073"
+  },
+  {
+    "question": "What is the current stock price of NVIDIA?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 not covered by the corpus.",
+    "question_id": "adversarial_074"
+  },
+  {
+    "question": "How do I fine-tune GPT-4 on my custom dataset?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 fine-tuning is not a topic in this RAG-focused corpus.",
+    "question_id": "adversarial_075"
+  },
+  {
+    "question": "What did Yann LeCun say about RAG at NeurIPS 2024?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 specific conference talks are not in the corpus.",
+    "question_id": "adversarial_076"
+  },
+  {
+    "question": "Compare the performance of Claude and GPT-4 on medical question answering.",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 medical QA is not covered by this RAG-focused corpus.",
+    "question_id": "adversarial_077"
+  },
+  {
+    "question": "What is the best programming language for building RAG systems?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 opinion question not answerable from research papers.",
+    "question_id": "adversarial_078"
+  },
+  {
+    "question": "How much does it cost to run a RAG system in production at Google scale?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 proprietary cost data is not in arXiv papers.",
+    "question_id": "adversarial_079"
+  },
+  {
+    "question": "What will be the next breakthrough in RAG research in 2027?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 future predictions cannot be answered from existing papers.",
+    "question_id": "adversarial_080"
+  },
+  {
+    "question": "Explain how blockchain technology can improve RAG systems.",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 blockchain is not a topic in this corpus.",
+    "question_id": "adversarial_081"
+  },
+  {
+    "question": "What are the ethical implications of using RAG in healthcare?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 healthcare ethics is not covered in this technical corpus.",
+    "question_id": "adversarial_082"
+  },
+  {
+    "question": "How does Apple's Siri use retrieval-augmented generation internally?",
+    "category": "adversarial",
+    "expected_arxiv_ids": [],
+    "expected_sections": [],
+    "expected_answer_keywords": [],
+    "should_decline": true,
+    "reference_answer": "Out of scope \u2014 proprietary system details are not in arXiv papers.",
+    "question_id": "adversarial_083"
+  }
+]
