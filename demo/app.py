@@ -30,17 +30,12 @@ def ensure_index():
 ensure_index()
 
 try:
-    gemini_key = st.secrets["GEMINI_API_KEY"]
-    os.environ["GEMINI_API_KEY"] = gemini_key
-    print(f"[app] Loaded GEMINI_API_KEY from st.secrets (length={len(gemini_key)})")
-except Exception as e:
-    print(f"[app] st.secrets failed: {e}, falling back to .env")
+    os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+except Exception:
     from dotenv import load_dotenv
     load_dotenv()
 
-print(f"[app] GEMINI_API_KEY in env: {bool(os.environ.get('GEMINI_API_KEY'))}")
-
-from src.pipeline import Pipeline
+from src.pipeline import Pipeline  # noqa: E402
 
 st.set_page_config(page_title="Research Paper Q&A", page_icon="📄", layout="wide")
 
@@ -108,7 +103,7 @@ if query:
     with st.spinner("Retrieving and generating..."):
         try:
             answer, chunks, result = pipeline.query(query)
-        except Exception as e:
+        except Exception:
             st.error("The LLM provider is temporarily rate-limited. Please wait a moment and try again.")
             st.stop()
 
