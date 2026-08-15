@@ -8,7 +8,7 @@ from pathlib import Path
 import structlog
 import yaml
 
-from src.ingestion.arxiv_client import PaperMeta, download_pdf, fetch_papers
+from src.ingestion.arxiv_client import download_pdf, fetch_papers
 from src.ingestion.pdf_parser import parse_pdf
 from src.indexing.chunker import chunk_sections
 from src.indexing.embedder import build_index

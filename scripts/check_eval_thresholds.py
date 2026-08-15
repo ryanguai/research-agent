@@ -28,7 +28,7 @@ def main():
         print(f"FAIL: decline rate {decline_rate:.0%} is below threshold {THRESHOLDS['adversarial_decline_rate']:.0%}")
         failed = True
     else:
-        print(f"PASS: decline rate meets threshold")
+        print("PASS: decline rate meets threshold")
 
     if failed:
         sys.exit(1)

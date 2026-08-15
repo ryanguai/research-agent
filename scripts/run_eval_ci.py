@@ -17,7 +17,7 @@ structlog.configure(
 )
 log = structlog.get_logger()
 
-from src.eval.runner import EvalCase, compute_retrieval_metrics, _check_declined
+from src.eval.runner import EvalCase, _check_declined
 from src.pipeline import Pipeline
 
 
@@ -82,7 +82,7 @@ def main():
     total = len(results)
     decline_rate = decline_count / total if total > 0 else 0
 
-    print(f"\n=== CI EVAL RESULTS ===")
+    print("\n=== CI EVAL RESULTS ===")
     print(f"Adversarial decline rate: {decline_count}/{total} ({decline_rate:.0%})")
     print(f"Results saved to {out_path}")
 
