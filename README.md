@@ -143,7 +143,7 @@ Deployed on Render (free tier) via Docker. Also available on Streamlit Community
 | Platform | URL | Notes |
 |----------|-----|-------|
 | Streamlit Cloud | [Demo](https://research-agent-9xtkzqqwxebqhrufgxdn5e.streamlit.app/) | Auto-deploys from GitHub |
-| Render | [INSERT: Render URL] | Docker container, free tier |
+| Render | [Demo](https://research-agent-47fm.onrender.com/) | Docker container, free tier |
 
 **Why Render**: Free tier with no credit card required, auto-deploys from GitHub, supports Docker natively. Cloud Run requires `gcloud` CLI setup and billing account (even for free tier). Fly.io's free tier has been unreliable.
 
