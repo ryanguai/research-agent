@@ -1,5 +1,7 @@
 # AI Research Paper Q&A Agent
 
+[![CI](https://github.com/ryanguai/research-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/ryanguai/research-agent/actions/workflows/ci.yml)
+
 A RAG (Retrieval-Augmented Generation) system that answers technical questions about recent AI/ML research papers, citing the specific paper and section it drew from. Built as a portfolio project demonstrating retrieval engineering, evaluation rigor, and production hardening.
 
 ## Problem Statement
