@@ -103,11 +103,63 @@ python scripts/run_eval.py
 python scripts/load_test.py
 ```
 
+## Deployment & CI/CD
+
+### Docker
+
+```bash
+# Build
+docker build -t research-agent .
+
+# Run the demo
+docker run -p 8501:8501 -e GEMINI_API_KEY=your-key research-agent
+
+# Run eval inside the container
+docker run -e GEMINI_API_KEY=your-key research-agent python scripts/run_eval_ci.py
+```
+
+Single-container build using `python:3.10-slim`. The image downloads the pre-built ChromaDB index from GitHub Releases on first boot (~193MB), so no data needs to be baked into the image.
+
+### CI Pipeline (GitHub Actions)
+
+Every push/PR to main triggers three parallel jobs:
+
+1. **Lint** — `ruff check` on all source code
+2. **Docker build** — confirms the image builds cleanly
+3. **Eval gate** — runs the 10 adversarial questions and fails if the decline rate drops below 50%
+
+The eval gate is the key feature: it's automated regression detection for answer quality, not just code correctness. If a prompt change causes the model to start hallucinating instead of declining, the pipeline catches it.
+
+**Why adversarial-only in CI**: The full 84-question eval takes ~30 min and burns API quota. The 10 adversarial questions run in ~2 min, cost ~10 API calls, and test the most critical behavior (not hallucinating). Full eval runs on-demand locally.
+
+**Threshold**: Adversarial decline rate >= 50%. Set conservatively below the current 60-100% range to allow for model variance while catching real regressions.
+
+### Cloud Deployment
+
+Deployed on Render (free tier) via Docker. Also available on Streamlit Community Cloud.
+
+| Platform | URL | Notes |
+|----------|-----|-------|
+| Streamlit Cloud | [Demo](https://research-agent-9xtkzqqwxebqhrufgxdn5e.streamlit.app/) | Auto-deploys from GitHub |
+| Render | [INSERT: Render URL] | Docker container, free tier |
+
+**Why Render**: Free tier with no credit card required, auto-deploys from GitHub, supports Docker natively. Cloud Run requires `gcloud` CLI setup and billing account (even for free tier). Fly.io's free tier has been unreliable.
+
+### Free Tier Quotas
+
+| Service | Quota | Impact |
+|---------|-------|--------|
+| Gemini API | ~250-1000 req/day per model | Model fallback chain cycles through 4 models |
+| Render | 750 hours/month | Sufficient for a demo — app sleeps when idle |
+| Streamlit Cloud | 1 GB memory | Tight but sufficient for the index + embedding model |
+| GitHub Actions | 2000 min/month | CI runs ~3 min per push |
+
 ## Tech Stack
 
 - **Retrieval**: ChromaDB, BGE-small-en-v1.5, BM25 (rank-bm25)
-- **Generation**: Ollama (Llama 3.2) / OpenAI / Google Gemini / Groq
+- **Generation**: Ollama (Llama 3.2) / Google Gemini (free tier with model fallback)
 - **PDF Parsing**: PyMuPDF (section-aware extraction)
-- **Evaluation**: Custom eval runner + LLM-as-judge
+- **Evaluation**: Custom eval runner + LLM-as-judge + CI regression gate
 - **Demo**: Streamlit
+- **Deployment**: Docker, GitHub Actions, Render
 - **Logging**: structlog (structured, per-request)

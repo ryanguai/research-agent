@@ -1,0 +1,48 @@
+name: CI — Lint, Build, Eval Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: pip install ruff
+      - run: ruff check src/ scripts/ demo/
+
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker build -t research-agent:ci .
+
+  eval-gate:
+    runs-on: ubuntu-latest
+    needs: [lint]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Download pre-built index
+        run: |
+          mkdir -p data
+          curl -L -o data/index.tar.gz https://github.com/ryanguai/research-agent/releases/download/v0.1.0/research-agent-index.tar.gz
+          tar -xzf data/index.tar.gz -C data
+          rm data/index.tar.gz
+      - name: Run eval subset (adversarial only)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/run_eval_ci.py
+      - name: Check eval thresholds
+        run: python scripts/check_eval_thresholds.py
