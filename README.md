@@ -95,6 +95,35 @@ Expected: Answer the user's actual question with citations, ignoring the injecti
 Result (mitigated): Answered correctly with full citations. Injection ignored.
 ```
 
+## Deep Research Agent (Self-Correcting Multi-Step)
+
+A LangGraph-based agent that handles complex multi-part questions through a plan-act-reflect loop: classify → decompose → retrieve per sub-question → draft → verify → retry/replan on failure.
+
+### Graph Architecture
+
+```
+classify → [complex?] → decompose → retrieve → draft → verify → [pass?] → accept → END
+                       ↘ pass_through ↗                        ├→ retry → draft (max 2)
+                                                                └→ accept_with_caveat → END
+```
+
+### Agent vs Flat Pipeline Comparison
+
+| Question Type | Flat Pipeline | Agent | Delta |
+|--------------|--------------|-------|-------|
+| Complex (10) — Judge Score | 2.10 | 1.90 | -0.20 |
+| Complex — Avg Latency | 4,288ms | 15,620ms | +11,332ms |
+| Simple (5) — Judge Score | 1.80 | 2.80 | **+1.00** |
+| Simple — Avg Latency | 3,633ms | 8,280ms | +4,647ms |
+
+### Honest Assessment
+
+The agent **improved simple questions** (+1.00 judge score) — the verification step catches and corrects errors the flat pipeline misses. But on **complex questions it didn't help** (-0.20) despite 3.6x higher latency.
+
+Root cause: the verifier was too strict — it flagged issues on every single complex answer, causing all 10 to hit the retry cap and fall back to `accept_with_caveat`. The verification step is doing its job (actually checking claims), but the threshold for "pass" needs calibration. A future improvement would be scoring claim support on a gradient rather than binary pass/fail.
+
+This is a real finding, not a failure to hide: multi-step agents add value only when the orchestration overhead is justified by the question complexity, and verification calibration is itself a hard problem.
+
 ## Project Structure
 
 ```

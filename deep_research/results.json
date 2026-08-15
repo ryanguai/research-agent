@@ -1,0 +1,435 @@
+[
+  {
+    "question_id": "complex_000",
+    "question": "Compare the caching strategies proposed in QV-PIC and CoinRAG. How do their approaches to KV-cache reuse differ, and what are the tradeoffs?",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 1.0,
+    "flat_latency": 5580.380916595459,
+    "agent_latency": 15691.251039505005,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "What are the specific mechanisms used by QV-PIC and CoinRAG to facilitate KV-cache reuse?",
+      "How do the architectural designs of QV-PIC and CoinRAG differ in their approach to managing and storing cached KV states?",
+      "What are the performance tradeoffs between QV-PIC and CoinRAG regarding memory efficiency, latency, and cache hit rates?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 3554 chars",
+      "verify: FAIL \u2014 5 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 3139 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3168 chars",
+      "verify: FAIL \u2014 7 issues",
+      "accept_with_caveat: 7 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_001",
+    "question": "What are the different approaches to adaptive retrieval in RAG systems, and how does SAGE's SLO-aware approach differ from earlier methods like FLARE and Self-RAG?",
+    "category": "complex",
+    "flat_judge": 5.0,
+    "agent_judge": 5.0,
+    "flat_latency": 3258.8841915130615,
+    "agent_latency": 12069.486141204834,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "What are the primary architectural approaches to adaptive retrieval in RAG systems?",
+      "How do FLARE and Self-RAG implement adaptive retrieval mechanisms to improve generation quality?",
+      "What are the core components and mechanisms of SAGE's SLO-aware adaptive retrieval approach?",
+      "How does SAGE's SLO-aware approach differ from FLARE and Self-RAG in terms of performance optimization and resource constraints?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 4 sub-questions",
+      "retrieve: 20 chunks for 4 sub-questions",
+      "draft: attempt 1, 2222 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 2192 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 1959 chars",
+      "verify: FAIL \u2014 3 issues",
+      "accept_with_caveat: 3 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_002",
+    "question": "How do RAG systems handle the tradeoff between retrieval recall and latency? Compare at least two approaches from different papers.",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 2.0,
+    "flat_latency": 3925.2028465270996,
+    "agent_latency": 15715.970039367676,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "What specific architectural techniques do RAG systems employ to optimize retrieval latency without significantly compromising recall?",
+      "How do different RAG approaches, such as hierarchical indexing versus dense passage retrieval, quantitatively balance the tradeoff between search speed and retrieval accuracy?",
+      "What are the comparative performance metrics of two distinct RAG optimization strategies regarding their impact on end-to-end system latency and retrieval precision?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 2951 chars",
+      "verify: FAIL \u2014 6 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 2637 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3464 chars",
+      "verify: FAIL \u2014 5 issues",
+      "accept_with_caveat: 5 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_003",
+    "question": "What security vulnerabilities exist in RAG systems, and what defenses have been proposed? Cover both knowledge poisoning and prompt injection.",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 1.0,
+    "flat_latency": 4829.939842224121,
+    "agent_latency": 15353.9719581604,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "What are the mechanisms and potential impacts of knowledge poisoning attacks on RAG systems?",
+      "What are the common techniques for executing prompt injection attacks against RAG pipelines?",
+      "What defense strategies have been proposed to mitigate knowledge poisoning in RAG systems?",
+      "What are the current state-of-the-art methods for detecting and preventing prompt injection in RAG architectures?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 4 sub-questions",
+      "retrieve: 20 chunks for 4 sub-questions",
+      "draft: attempt 1, 3238 chars",
+      "verify: FAIL \u2014 5 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 3431 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 4145 chars",
+      "verify: FAIL \u2014 3 issues",
+      "accept_with_caveat: 3 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_004",
+    "question": "How do section-aware chunking, nugget-based approaches, and fixed-window chunking compare for RAG retrieval quality? What does the literature suggest about optimal chunk granularity?",
+    "category": "complex",
+    "flat_judge": 4.0,
+    "agent_judge": 1.0,
+    "flat_latency": 3741.760015487671,
+    "agent_latency": 14728.18398475647,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "How do section-aware, nugget-based, and fixed-window chunking strategies compare in terms of RAG retrieval accuracy?",
+      "What does current research indicate regarding the impact of chunk granularity on the performance of retrieval-augmented generation systems?",
+      "What are the relative advantages and limitations of structural versus semantic chunking methods for information retrieval?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 3589 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 3381 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3552 chars",
+      "verify: FAIL \u2014 3 issues",
+      "accept_with_caveat: 3 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_005",
+    "question": "What evaluation frameworks exist for RAG systems? Compare RAGChecker's approach to other evaluation methodologies mentioned in the corpus.",
+    "category": "complex",
+    "flat_judge": 5.0,
+    "agent_judge": 2.0,
+    "flat_latency": 4000.54669380188,
+    "agent_latency": 14455.826997756958,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "What are the existing evaluation frameworks for RAG systems?",
+      "How does RAGChecker's evaluation methodology function?",
+      "How does RAGChecker's approach compare to other RAG evaluation methodologies?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 3151 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 2962 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 2888 chars",
+      "verify: FAIL \u2014 3 issues",
+      "accept_with_caveat: 3 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_006",
+    "question": "How do graph-based retrieval approaches compare to traditional vector-based retrieval for RAG? What advantages do knowledge graphs provide?",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 2.0,
+    "flat_latency": 4374.528884887695,
+    "agent_latency": 18399.648904800415,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "How do graph-based retrieval methods compare to traditional vector-based retrieval in terms of retrieval accuracy and latency for RAG systems?",
+      "What specific structural advantages do knowledge graphs offer for capturing multi-hop relationships and context in RAG?",
+      "In what scenarios do knowledge graphs outperform vector embeddings in reducing hallucinations or improving information synthesis?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 4541 chars",
+      "verify: FAIL \u2014 8 issues",
+      "replan: follow-up retrieval for 'The claim that traditional vector-based retrieval ', got 3 chunks",
+      "draft: attempt 2, 4496 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3374 chars",
+      "verify: FAIL \u2014 3 issues",
+      "accept_with_caveat: 3 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_007",
+    "question": "What are the main approaches to multi-hop reasoning in RAG systems, and how do they handle questions that require combining evidence from multiple documents?",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 2.0,
+    "flat_latency": 4339.7767543792725,
+    "agent_latency": 17467.61703491211,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "What are the primary architectural approaches used for multi-hop reasoning in RAG systems?",
+      "How do RAG systems decompose complex multi-hop queries into sub-tasks for evidence retrieval?",
+      "What mechanisms do RAG systems employ to synthesize and integrate information across multiple retrieved documents?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 4184 chars",
+      "verify: FAIL \u2014 5 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 3306 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3974 chars",
+      "verify: FAIL \u2014 6 issues",
+      "accept_with_caveat: 6 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_008",
+    "question": "Compare the embedding strategies used across different RAG papers. How do dense embeddings, sparse methods, and hybrid approaches trade off precision vs recall?",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 2.0,
+    "flat_latency": 4133.17608833313,
+    "agent_latency": 15469.028949737549,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "How do dense embedding models compare to sparse retrieval methods in terms of precision and recall performance in RAG systems?",
+      "What are the primary architectural strategies for implementing hybrid retrieval approaches in RAG?",
+      "How do hybrid embedding strategies balance the trade-offs between precision and recall compared to using dense or sparse methods in isolation?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 3605 chars",
+      "verify: FAIL \u2014 6 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 4050 chars",
+      "verify: FAIL \u2014 8 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3589 chars",
+      "verify: FAIL \u2014 5 issues",
+      "accept_with_caveat: 5 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "complex_009",
+    "question": "What role does temporal awareness play in RAG systems? How do papers handle document versioning and time-sensitive queries?",
+    "category": "complex",
+    "flat_judge": 1.0,
+    "agent_judge": 1.0,
+    "flat_latency": 4694.8652267456055,
+    "agent_latency": 16850.86989402771,
+    "agent_retries": 2,
+    "agent_is_complex": true,
+    "agent_sub_questions": [
+      "How does temporal awareness influence the retrieval accuracy and relevance of RAG systems for time-sensitive queries?",
+      "What are the current architectural strategies for managing document versioning and temporal metadata in RAG pipelines?",
+      "How do state-of-the-art RAG models integrate temporal reasoning to distinguish between outdated and current information?"
+    ],
+    "agent_trace": [
+      "classify: complex",
+      "decompose: 3 sub-questions",
+      "retrieve: 15 chunks for 3 sub-questions",
+      "draft: attempt 1, 3612 chars",
+      "verify: FAIL \u2014 6 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 3456 chars",
+      "verify: FAIL \u2014 5 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 4077 chars",
+      "verify: FAIL \u2014 4 issues",
+      "accept_with_caveat: 4 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "simple_000",
+    "question": "What is retrieval-augmented generation?",
+    "category": "simple",
+    "flat_judge": 1.0,
+    "agent_judge": 2.0,
+    "flat_latency": 4445.59907913208,
+    "agent_latency": 13677.575826644897,
+    "agent_retries": 2,
+    "agent_is_complex": false,
+    "agent_sub_questions": [
+      "What is retrieval-augmented generation?"
+    ],
+    "agent_trace": [
+      "classify: simple",
+      "pass_through: single question, no decomposition",
+      "retrieve: 5 chunks for 1 sub-questions",
+      "draft: attempt 1, 3388 chars",
+      "verify: FAIL \u2014 8 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 2574 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 3288 chars",
+      "verify: FAIL \u2014 6 issues",
+      "accept_with_caveat: 6 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "simple_001",
+    "question": "What caching strategies does QV-PIC propose?",
+    "category": "simple",
+    "flat_judge": 1.0,
+    "agent_judge": 1.0,
+    "flat_latency": 2982.495069503784,
+    "agent_latency": 9865.082740783691,
+    "agent_retries": 2,
+    "agent_is_complex": false,
+    "agent_sub_questions": [
+      "What caching strategies does QV-PIC propose?"
+    ],
+    "agent_trace": [
+      "classify: simple",
+      "pass_through: single question, no decomposition",
+      "retrieve: 5 chunks for 1 sub-questions",
+      "draft: attempt 1, 2377 chars",
+      "verify: FAIL \u2014 4 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 1449 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 2078 chars",
+      "verify: FAIL \u2014 4 issues",
+      "accept_with_caveat: 4 unresolved issues after 2 retries"
+    ]
+  },
+  {
+    "question_id": "simple_002",
+    "question": "What is Reciprocal Rank Fusion?",
+    "category": "simple",
+    "flat_judge": 2.0,
+    "agent_judge": 5.0,
+    "flat_latency": 3161.228895187378,
+    "agent_latency": 2593.1038856506348,
+    "agent_retries": 0,
+    "agent_is_complex": false,
+    "agent_sub_questions": [
+      "What is Reciprocal Rank Fusion?"
+    ],
+    "agent_trace": [
+      "classify: simple",
+      "pass_through: single question, no decomposition",
+      "retrieve: 5 chunks for 1 sub-questions",
+      "draft: attempt 1, 351 chars",
+      "verify: PASS \u2014 0 issues",
+      "accept: verification passed"
+    ]
+  },
+  {
+    "question_id": "simple_003",
+    "question": "How does BM25 work for text retrieval?",
+    "category": "simple",
+    "flat_judge": 4.0,
+    "agent_judge": 5.0,
+    "flat_latency": 3962.4857902526855,
+    "agent_latency": 5626.502752304077,
+    "agent_retries": 1,
+    "agent_is_complex": false,
+    "agent_sub_questions": [
+      "How does BM25 work for text retrieval?"
+    ],
+    "agent_trace": [
+      "classify: simple",
+      "pass_through: single question, no decomposition",
+      "retrieve: 5 chunks for 1 sub-questions",
+      "draft: attempt 1, 1178 chars",
+      "verify: FAIL \u2014 3 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 537 chars",
+      "verify: PASS \u2014 0 issues",
+      "accept: verification passed"
+    ]
+  },
+  {
+    "question_id": "simple_004",
+    "question": "What is the SAGE framework for RAG?",
+    "category": "simple",
+    "flat_judge": 1.0,
+    "agent_judge": 1.0,
+    "flat_latency": 3614.3481731414795,
+    "agent_latency": 9639.607906341553,
+    "agent_retries": 2,
+    "agent_is_complex": false,
+    "agent_sub_questions": [
+      "What is the SAGE framework for RAG?"
+    ],
+    "agent_trace": [
+      "classify: simple",
+      "pass_through: single question, no decomposition",
+      "retrieve: 5 chunks for 1 sub-questions",
+      "draft: attempt 1, 1899 chars",
+      "verify: FAIL \u2014 6 issues",
+      "retry: attempt 1 -> 2",
+      "draft: attempt 2, 1656 chars",
+      "verify: FAIL \u2014 5 issues",
+      "retry: attempt 2 -> 3",
+      "draft: attempt 3, 1442 chars",
+      "verify: FAIL \u2014 6 issues",
+      "accept_with_caveat: 6 unresolved issues after 2 retries"
+    ]
+  }
+]

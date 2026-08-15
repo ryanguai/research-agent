@@ -1,0 +1,116 @@
+[
+  {
+    "question_id": "complex_000",
+    "question": "Compare the caching strategies proposed in QV-PIC and CoinRAG. How do their approaches to KV-cache reuse differ, and what are the tradeoffs?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_001",
+    "question": "What are the different approaches to adaptive retrieval in RAG systems, and how does SAGE's SLO-aware approach differ from earlier methods like FLARE and Self-RAG?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_002",
+    "question": "How do RAG systems handle the tradeoff between retrieval recall and latency? Compare at least two approaches from different papers.",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_003",
+    "question": "What security vulnerabilities exist in RAG systems, and what defenses have been proposed? Cover both knowledge poisoning and prompt injection.",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_004",
+    "question": "How do section-aware chunking, nugget-based approaches, and fixed-window chunking compare for RAG retrieval quality? What does the literature suggest about optimal chunk granularity?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_005",
+    "question": "What evaluation frameworks exist for RAG systems? Compare RAGChecker's approach to other evaluation methodologies mentioned in the corpus.",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_006",
+    "question": "How do graph-based retrieval approaches compare to traditional vector-based retrieval for RAG? What advantages do knowledge graphs provide?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_007",
+    "question": "What are the main approaches to multi-hop reasoning in RAG systems, and how do they handle questions that require combining evidence from multiple documents?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_008",
+    "question": "Compare the embedding strategies used across different RAG papers. How do dense embeddings, sparse methods, and hybrid approaches trade off precision vs recall?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "complex_009",
+    "question": "What role does temporal awareness play in RAG systems? How do papers handle document versioning and time-sensitive queries?",
+    "category": "complex",
+    "requires_decomposition": true
+  },
+  {
+    "question_id": "simple_000",
+    "question": "What is retrieval-augmented generation?",
+    "category": "simple",
+    "requires_decomposition": false
+  },
+  {
+    "question_id": "simple_001",
+    "question": "What caching strategies does QV-PIC propose?",
+    "category": "simple",
+    "requires_decomposition": false
+  },
+  {
+    "question_id": "simple_002",
+    "question": "What is Reciprocal Rank Fusion?",
+    "category": "simple",
+    "requires_decomposition": false
+  },
+  {
+    "question_id": "simple_003",
+    "question": "How does BM25 work for text retrieval?",
+    "category": "simple",
+    "requires_decomposition": false
+  },
+  {
+    "question_id": "simple_004",
+    "question": "What is the SAGE framework for RAG?",
+    "category": "simple",
+    "requires_decomposition": false
+  },
+  {
+    "question_id": "verification_000",
+    "question": "What is retrieval-augmented generation?",
+    "category": "verification_trap",
+    "requires_decomposition": false,
+    "planted_claim": "RAG was invented by Google in 2018",
+    "note": "Verifier should catch that RAG was introduced by Lewis et al. 2020 at Facebook, not Google 2018"
+  },
+  {
+    "question_id": "verification_001",
+    "question": "What caching approaches exist for RAG?",
+    "category": "verification_trap",
+    "requires_decomposition": false,
+    "planted_claim": "CoinRAG achieves 99% latency reduction compared to standard RAG",
+    "note": "Verifier should catch that 99% is fabricated — the actual improvement is significant but not that extreme"
+  },
+  {
+    "question_id": "verification_002",
+    "question": "How does hybrid retrieval compare to vector-only?",
+    "category": "verification_trap",
+    "requires_decomposition": false,
+    "planted_claim": "All papers in the corpus unanimously agree that hybrid retrieval is always superior",
+    "note": "Verifier should catch that this is an overgeneralization — there are tradeoffs"
+  }
+]
